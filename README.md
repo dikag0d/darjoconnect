@@ -1,16 +1,58 @@
-# darjoconnect
+# Darjo Connect
 
-A new Flutter project.
+Aplikasi layanan pelaporan dan informasi warga Sidoarjo. Warga dapat mengirim aduan, memantau progres penanganan, dan menerima pengumuman penting dari admin sesuai kategori.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Fitur Utama
 
-A few resources to get you started if this is your first Flutter project:
+### 1. Pelaporan Aduan
+- Warga dapat membuat laporan berdasarkan kategori:
+  - 🔥 Kebakaran  
+  - ⚡ Listrik / PLN  
+  - 🛣️ Jalan Rusak  
+  - 🚰 Air  
+  - 🧹 Kesehatan
+- Setiap laporan berisi:
+  - Deskripsi  
+  - Lokasi  
+  - Foto  
+  - Status (Diterima, Diproses, Selesai)  
+  - Riwayat update dari admin  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 2. Multi-Admin (Role Based Access)
+Setiap admin hanya dapat mengakses laporan sesuai tugasnya:
+- Admin Pemadam → kebakaran  
+- Admin PLN → listrik  
+- Admin Pemerintah → jalan rusak  
+- Admin Kesehatan → ambulance, kecelakaan 
+
+Admin menerima notifikasi saat ada laporan baru di kategorinya.
+
+---
+
+### 3. Pengumuman (Announcements)
+Ketika warga menginputkan alamat yang sama 3 kali pada saat terjadi banjir,kemacetan,kebakaran maka sistem akan otomatis melaporkan pengumuman 
+Pengumuman muncul pada dashboard warga.
+
+---
+
+### 4. Autentikasi Pengguna
+- Login warga  
+- Login admin  
+- Registrasi akun  
+- Token-based authentication  
+- Validasi role (admin & user)  
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+- Flutter Dart (Frontend)
+- PHP (Backend) 
+- MySQL  (Database)  
+
+
+
+
